@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Furni24.pl - best furniture shop</title>
+</head>
+<body>
+<br>
+<div style="background: lightskyblue; width: 1000px; margin-left: auto; margin-right: auto;padding: 20px ">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Weight</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="furniture:${furnitures}">
+            <td th:text="${furniture.id}"></td>
+            <td th:text="${furniture.name}"></td>
+            <td th:text="${furniture.weight}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

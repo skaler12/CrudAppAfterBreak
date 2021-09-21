@@ -24,6 +24,11 @@ public class furniture {
     public furniture() {
     }
 
+    public furniture(String name, double weight) {
+        this.name=name;
+        this.weight=weight;
+    }
+
     public int getId() {
         return id;
     }
