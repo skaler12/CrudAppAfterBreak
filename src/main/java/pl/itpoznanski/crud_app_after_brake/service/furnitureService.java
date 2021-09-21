@@ -19,8 +19,11 @@ public class furnitureService {
     public furniture save (furniture furniture){
         return furnitureRepo.save(furniture);
     }
-    public Optional<furniture>findById(Integer id){
+    public Optional<furniture> findById(int id){
         return furnitureRepo.findById(id);
+    }
+    public void deleteById(int id){
+        furnitureRepo.deleteById(id);
     }
     public void delete (furniture furniture){
         furnitureRepo.delete(furniture);
